@@ -33,3 +33,14 @@
         font-size: 3vw;       
     }
 }
+
+@media (max-width: 400px) {
+    #projectTitle {
+        font-size: 12vw;
+        margin-bottom: 8%;
+    }
+
+    #reference {
+        font-size: 4vw;
+    }
+}

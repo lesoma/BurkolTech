@@ -22,3 +22,9 @@
         font-size: 11vw;
     }
 }
+
+@media (max-width: 400px) {
+    #pricesTitle {
+        font-size: 13vw;
+    }
+}

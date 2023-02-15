@@ -42,3 +42,10 @@ body {
     overflow-x: hidden;
     padding-bottom: 50px;
 }
+
+@media (max-width: 500px) {
+    html {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
