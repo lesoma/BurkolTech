@@ -1,12 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burkol Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about-me.css">
+    <link rel="stylesheet" href="projects-subtitle.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="prices-subtitle.css">
+    <link rel="stylesheet" href="prices.css">
+    <link rel="stylesheet" href="contact-me.css">
 </head>
+
 <body>
-    
+    <nav class="navbar">
+        <div class="home-and-hamburger-container">
+            <a id="home" href="/">Burkol Tech</a>
+            <div class="hamburger">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </div>
+        </div>
+        <div class="link-container">
+            <a href="#projects">Munkáim</a>
+            <a href="#prices">Árak</a>
+            <a href="#contact">Kapcsolat</a>
+        </div>
+    </nav>
+
+    <header class="header-container">
+        <div class="flex-item-left">
+            <p id="name">Juhász Attila</p>
+            <p id="position">Burkoló</p>
+            <div class="info-container">
+                <div class="info">
+                    <img src="gps.png" alt="">
+                    <span>Budapest</span>
+                </div>
+                <div class="info">
+                    <img src="phone.png" alt="">
+                    <span>+36 20 777 68 13</span>
+                </div>
+                <div class="info">
+                    <img src="mail.png" alt="">
+                    <span>burkoltech@gmail.com</span>
+                </div>
+                <div class="info">
+                    <img src="insta.png" alt="">
+                    <span>burkol_tech</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-right">
+            <img id="background" src="back.png" alt="">
+            <img id="profile" src="me.png" alt="It is me">
+        </div>
+    </header>
+
+    <section class="about-me">
+        <div class="about-me-wrapper">
+            <img src="about-me.png" alt="">
+            <div class="description">Shortbread gingerbread cake oat cake gummi bears brownie gingerbread jelly. Powder
+                fruitcake liquorice
+                caramels marshmallow cupcake croissant. Shortbread gingerbread cake oat cake gummi bears brownie gingerbread jelly. Powder
+                fruitcake liquorice
+                caramels marshmallow cupcake croissant.
+            </div>
+        </div>
+        <div class="about-me-wrapper">
+            <img src="about-me.png" alt="">
+            <div class="description">Shortbread gingerbread cake oat cake gummi bears brownie gingerbread jelly. Powder
+                fruitcake liquorice
+                caramels marshmallow cupcake croissant. Shortbread gingerbread cake oat cake gummi bears brownie gingerbread jelly. Powder
+                fruitcake liquorice
+                caramels marshmallow cupcake croissant.
+            </div>
+        </div>
+        <div class="about-me-wrapper">
+            <img src="about-me.png" alt="">
+            <div class="description">Shortbread gingerbread cake oat cake gummi bears brownie gingerbread jelly. Powder
+                fruitcake liquorice
+                caramels marshmallow cupcake croissant. Shortbread gingerbread cake oat cake gummi bears brownie gingerbread jelly. Powder
+                fruitcake liquorice
+                caramels marshmallow cupcake croissant.
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-subtitle">
+        <img src="projects.jpg" alt="">
+        <div id="projectTitle">Projects</div>
+        <div id="reference">More on @burkol_tech</div>
+    </section>
+
+    <section class="projects">
+        <a data-modal="modal1" id="first-card" class="project-card bounce-in">
+            <div class="image-container">
+                <img src="1.webp" alt="">
+            </div>
+        </a>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <img class="arrow" src="left-arrow.png" alt="">
+                <img src="1.webp" alt="">
+                <img class="arrow" src="right-arrow.png" alt="">
+            </div>
+        </div>
+        <a data-modal="modal1" id="first-card" class="project-card bounce-in">
+            <div class="image-container">
+                <img src="1.webp" alt="">
+            </div>
+        </a>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <img src="1.webp" alt="">
+            </div>
+        </div>
+        <a data-modal="modal1" id="first-card" class="project-card bounce-in">
+            <div class="image-container">
+                <img src="1.webp" alt="">
+            </div>
+        </a>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <img src="1.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="prices-subtitle">
+        <img src="prices.jpg" alt="">
+        <div id="pricesTitle">Services & prices</div>
+    </section>
+
+    <section class="prices">
+        <div class="category">
+            <div class="top">
+                <div>Category 1</div>
+                <div class="line"></div>
+            </div>
+            <div class="body">
+                <div class="row">
+                    <div>item 1</div>
+                    <div>1000 Huf</div>
+                </div>
+                <div class="row">
+                    <div>item 2</div>
+                    <div>2000 Huf</div>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="top">
+                <div>Category 2</div>
+                <div class="line"></div>
+            </div>
+            <div class="body">
+                <div class="row">
+                    <div>item 1</div>
+                    <div>1000 Huf</div>
+                </div>
+                <div class="row">
+                    <div>item 2</div>
+                    <div>2000 Huf</div>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="top">
+                <div>Category 3</div>
+                <div class="line"></div>
+            </div>
+            <div class="body">
+                <div class="row">
+                    <div>item 1</div>
+                    <div>1000 Huf</div>
+                </div>
+                <div class="row">
+                    <div>item 2</div>
+                    <div>2000 Huf</div>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="top">
+                <div>Category 4</div>
+                <div class="line"></div>
+            </div>
+            <div class="body">
+                <div class="row">
+                    <div>item 1</div>
+                    <div>1000 Huf</div>
+                </div>
+                <div class="row">
+                    <div>item 2</div>
+                    <div>2000 Huf</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="contact-me">
+        <div id="contactTitle">Contact me</div>
+        <img id="map" src="map.png" alt="">
+        <div class="contacts">
+            <div class="info">
+                <img src="gps.png" alt="">
+                <span>Budapest</span>
+            </div>
+            <div class="info">
+                <img src="phone.png" alt="">
+                <span>+36 20 777 68 13</span>
+            </div>
+            <div class="info">
+                <img src="mail.png" alt="">
+                <span>burkoltech@gmail.com</span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="form">
+        <p>Send an email</p>
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <p>Message</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section> -->
+
+    <script src="main.js"></script>
 </body>
+
 </html>
