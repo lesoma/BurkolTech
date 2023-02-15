@@ -1,0 +1,35 @@
+.projects-subtitle {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10%;
+}
+
+.projects-subtitle img {
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+#projectTitle {
+    font-size: 8vw;
+    position: absolute;
+    margin-left: 5%;
+    margin-bottom: 7%;
+}
+
+#reference {
+    font-size: 2vw;
+    position: absolute;
+    margin-left: 5%;
+    margin-bottom: 4%;
+}
+
+@media (max-width: 650px) {
+    #projectTitle {
+        font-size: 10vw;
+    }
+
+    #reference {
+        font-size: 3vw;       
+    }
+}
