@@ -1,0 +1,41 @@
+.prices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    font-size: 2vw;
+    width: 40%;
+    padding: 5%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line {
+    width: 60%;
+    height: 5px;
+    background-color: black;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+@media (max-width: 550px) {
+    
+}
