@@ -3,6 +3,7 @@ window.addEventListener("click", navLinkAction);
 window.addEventListener("scroll", animationAdder);
 window.addEventListener("load", aboutMeAction);
 window.addEventListener("load", projectAction);
+window.addEventListener("resize", contactAction);
 
 function hamburgerAction() {
     const hamburger = document.querySelector(".hamburger");
@@ -110,5 +111,18 @@ function projectAction() {
                 if (typeof modals[i].style !== 'undefined') modals[i].style.display = "none";    
             }
         }
+    }
+}
+
+function contactAction() {
+    const infoWrapper = document.querySelector(".info-wrapper");
+    const form = document.querySelector(".form");
+    if (window.innerWidth <= 1024) {
+        infoWrapper.style.display = "none";
+        form.style.width = "100%";
+        form.style.marginLeft = "3%";
+    } else {
+        infoWrapper.style.display = "flex";
+        form.style.marginLeft = "0";
     }
 }

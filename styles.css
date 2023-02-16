@@ -33,8 +33,9 @@ html {
     max-width: 100%;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 13%;
+    padding-right: 13%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
