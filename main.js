@@ -2,6 +2,7 @@ window.addEventListener("click", hamburgerAction);
 window.addEventListener("click", navLinkAction);
 window.addEventListener("load", projectAction);
 window.addEventListener("resize", contactAction);
+window.addEventListener("load", contactAction);
 
 function hamburgerAction() {
     const hamburger = document.querySelector(".hamburger");
