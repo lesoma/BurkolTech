@@ -46,7 +46,7 @@ function projectAction() {
     for (let i = 0; i < projectCard.length; i++) {
         projectCard[i].addEventListener("click", function() {
             let modal = document.getElementById(this.dataset.modal);
-            modal.style.display = "block";
+            modal.style.display = "flex";
         }, false);
     }
     const modals = document.querySelectorAll('.modal');
@@ -72,24 +72,47 @@ function contactAction() {
     }
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+// need to refactor to a function
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("project-image");
+//   if (n > slides.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";  
+//   }
+//   slides[slideIndex-1].style.display = "flex";  
+// }
+
+// need to refactor to a function
+let slideIndex = [1,1,1];
+let slideId = ["project-1", "project-2", "project-3"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides(n, no) {
   let i;
-  let slides = document.getElementsByClassName("project-image");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
   }
-  slides[slideIndex-1].style.display = "flex";  
+  x[slideIndex[no]-1].style.display = "flex";  
 }
