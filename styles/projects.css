@@ -54,6 +54,8 @@
 
 .modal {
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -68,7 +70,7 @@
     display: flex;
     justify-content: space-around;
     width: 50%;
-    margin: 1% auto;
+    /* margin: 1% auto; */
     padding: 20px;
     background-color: #fefefe;
     border-radius: 15px;
@@ -123,7 +125,6 @@
 @media (max-width: 1000px) {
     .modal-content {
         width: 70%;
-        margin: 2% auto;
     }
 }
 
@@ -133,24 +134,32 @@
     }
 }
 
-@media (max-width: 800px) {
-    .modal-content {
-        margin: 5% auto;
-    }
-}
-
 @media (max-width: 750px) {
     .project-card {
         width: 48%;
     }
 }
 
-@media (max-width: 500px) {
-    .modal-content {
-        margin: 30% auto;
-    }
-
+@media (max-width: 600px) {
     .modal-content .arrow {
         width: 7%;
+    }
+
+    #leftArrow {
+        position: absolute;
+        margin-right: 80%;
+    }
+
+    #rightArrow {
+        position: absolute;
+        margin-left: 80%;
+    }
+
+    .project-image img {
+        width: 120%;
+    }
+
+    .modal-content {
+        padding: 0;
     }
 }
