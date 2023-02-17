@@ -11,20 +11,22 @@
 }
 
 #pricesTitle {
-    font-size: 10vw;
+    font-size: 8vw;
     position: absolute;
     margin-left: 20%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 @media (max-width: 650px) {
     #pricesTitle {
-        font-size: 11vw;
+        font-size: 9vw;
+        margin-bottom: 5%;
     }
 }
 
 @media (max-width: 400px) {
     #pricesTitle {
-        font-size: 13vw;
+        font-size: 10vw;
+        margin-bottom: 6%;
     }
 }

@@ -14,19 +14,20 @@
     font-size: 8vw;
     position: absolute;
     margin-left: 5%;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 
 #reference {
     font-size: 2vw;
     position: absolute;
-    margin-left: 5%;
-    margin-bottom: 4%;
+    margin-left: 5.5%;
+    margin-bottom: 2%;
 }
 
 @media (max-width: 650px) {
     #projectTitle {
-        font-size: 10vw;
+        font-size: 9vw;
+        margin-bottom: 6%;
     }
 
     #reference {
@@ -36,7 +37,7 @@
 
 @media (max-width: 400px) {
     #projectTitle {
-        font-size: 12vw;
+        font-size: 11vw;
         margin-bottom: 8%;
     }
 
