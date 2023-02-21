@@ -1,7 +1,7 @@
 .projects-subtitle {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 10%;
+    padding-top: 10%;
 }
 
 .projects-subtitle img {

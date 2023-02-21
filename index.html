@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <section class="projects-subtitle">
+    <section id="projects" class="projects-subtitle">
         <img src="pics/content/projects.jpg" alt="">
         <div id="projectTitle">Projects</div>
         <div id="reference">More on @burkol_tech</div>
@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <section class="prices-subtitle">
+    <section id="prices" class="prices-subtitle">
         <img src="pics/content/prices.jpg" alt="">
         <div id="pricesTitle">Services &<br>prices</div>
     </section>
@@ -237,7 +237,7 @@
         </div>
     </section>
 
-    <section class="contact-me">
+    <section id="contact" class="contact-me">
         <div id="contactTitle">Contact me</div>
         <div class="contact-container">
             <div class="info-wrapper">
@@ -257,13 +257,14 @@
                     </div>
                 </div>
             </div>
+            <!-- TODO: Integrate formsubmit -->
             <div class="form">
                 <p>Send an email</p>
                 <form action="">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Name" name="Név" required>
+                    <input type="email" placeholder="Email" name="Email" required>
                     <p>Message</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="üzenet" cols="30" rows="10" required></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
