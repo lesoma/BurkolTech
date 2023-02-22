@@ -1,8 +1,10 @@
 window.addEventListener("click", hamburgerAction);
 window.addEventListener("click", navLinkAction);
 window.addEventListener("load", projectAction);
-window.addEventListener("resize", contactAction);
+window.addEventListener("load", leftArrowAction);
+window.addEventListener("load", rightArrowAction);
 window.addEventListener("load", contactAction);
+window.addEventListener("resize", contactAction);
 
 function hamburgerAction() {
     const hamburger = document.querySelector(".hamburger");
@@ -72,9 +74,26 @@ function contactAction() {
     }
 }
 
-// need to refactor to a function
+function leftArrowAction() {
+    const leftArrow = document.querySelectorAll(".left-arrow");
+    for (let i = 0; i < leftArrow.length; i++) {
+        leftArrow[i].addEventListener("click", function() {
+            plusSlides(-1, i);
+        });
+    }
+}
+
+function rightArrowAction() {
+    const rightArrow = document.querySelectorAll(".right-arrow");
+    for (let i = 0; i < rightArrow.length; i++) {
+        rightArrow[i].addEventListener("click", function() {
+            plusSlides(1, i);
+        });
+    }
+}
+
+let slideId = ["project-1", "project-2", "project-3"];
 let slideIndex = [1,1,1];
-let slideId = ["project-1", "project-2", "project-3"]
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
