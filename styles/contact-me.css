@@ -1,7 +1,7 @@
 .contact-me {
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    background-color: #aaa;
     border-radius: 15px;
 }
 

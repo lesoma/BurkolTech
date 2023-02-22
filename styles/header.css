@@ -55,7 +55,7 @@
 
 #profile {
     position: relative;
-    max-width: 60%;
+    max-width: 50%;
 }
 
 @media (max-width: 1024px) {
