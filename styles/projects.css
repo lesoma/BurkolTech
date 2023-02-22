@@ -145,12 +145,12 @@
         width: 7%;
     }
 
-    #leftArrow {
+    .left-arrow {
         position: absolute;
         margin-right: 80%;
     }
 
-    #rightArrow {
+    .right-arrow {
         position: absolute;
         margin-left: 80%;
     }
