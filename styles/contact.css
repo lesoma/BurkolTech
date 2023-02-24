@@ -69,19 +69,20 @@ textarea {
     height: 10em;
     border-radius: 5px;
     padding: 2%;
+    width: 82%;
 }
 
 textarea:focus {
     outline: none;
 }
 
-input, textarea, form p {
+input, form p {
     width: 85%;
 }
 
 input, textarea {
     align-self: center;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
 }
 
 .form p, button {
@@ -104,9 +105,27 @@ form button {
     color: whitesmoke;
 }
 
+@media (max-width: 1200px) {
+    #contactTitle {
+        font-size: 9vw;
+    }
+
+    .contacts .info span {
+        font-size: 1.7vw;
+    }
+
+    input, textarea {
+        font-size: 1.6vw;
+    }
+}
+
 @media (max-width: 1024px) {
+    #contactTitle {
+        font-size: 10vw;
+    }
+
     input, textarea, form button {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .form p {
@@ -114,25 +133,24 @@ form button {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     input, textarea, form button {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .form p {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
-}
 
-@media (max-width: 650px) {
     #contactTitle {
         font-size: 11vw;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     form button {
-        width: 85%;
+        align-self: flex-start;
+        width: 86%;
     }
 
     input, textarea, form button {
@@ -145,12 +163,6 @@ form button {
 }
 
 @media (max-width: 400px) {
-    #contactTitle {
-        font-size: 13vw;
-    }
-}
-
-@media (max-width: 350px) {
     input, textarea, form button {
         font-size: 5vw;
     }

@@ -8,9 +8,9 @@
     width: 40%;
 }
 
-.flex-item-left p {
+/* .flex-item-left p {
     font-size: 1.5vw;
-}
+} */
 
 .flex-item-left span {
     font-size: 1.5vw;
@@ -50,12 +50,26 @@
 #background {
     align-self: flex-end;
     position: absolute;
-    width: 80%;
+    width: 100%;
 }
 
 #profile {
     position: relative;
     max-width: 50%;
+}
+
+@media (max-width: 1200px) {
+    #name {
+        font-size: 3.5vw;
+    }
+
+    #position {
+        font-size: 2.5vw;
+    }
+
+    .flex-item-left span {
+        font-size: 1.7vw;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -64,9 +78,14 @@
         margin-top: 5%;
     }
 
-    .flex-item-left p {
-        font-size: 4vw;
+    #position {
+        margin-bottom: 5%;
+        font-size: 5vw;
     }
+
+    /* .flex-item-left p {
+        font-size: 5vw;
+    } */
 
     .flex-item-left span {
         font-size: 3vw;
@@ -99,15 +118,36 @@
     .flex-item-left, .flex-item-right {
         width: 100%;
     }
+}
+
+@media (max-width: 768px) {
+    #name {
+        font-size: 9vw;
+        margin-top: 5%;
+    }
 
     #position {
         margin-bottom: 5%;
-        font-size: 5vw;
+        font-size: 6vw;
+    }
+
+    .flex-item-left span {
+        font-size: 3.7vw;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+    #name {
+        font-size: 10vw;
+        margin-top: 5%;
+    }
+
+    #position {
+        margin-bottom: 5%;
+        font-size: 7vw;
+    }
+
     .flex-item-left span {
-        font-size: 3.7vw;
+        font-size: 3.5vw;
     }
 }

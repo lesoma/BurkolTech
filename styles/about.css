@@ -1,0 +1,67 @@
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    font-size: 1.4vw;
+    margin-bottom: 5%;
+}
+
+.about-me-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.about-me-wrapper img {
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.description {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .about-me {
+        font-size: 1.8vw;
+    }
+
+    .about-me-wrapper img {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-me {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        font-size: 3.5vw;
+    }
+
+    .about-me-wrapper {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+    .about-me-wrapper img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me {
+        font-size: 4vw;
+    }
+
+    .about-me-wrapper {
+        width: 90%;
+    }
+}
