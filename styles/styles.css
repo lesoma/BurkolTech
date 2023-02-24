@@ -45,7 +45,7 @@ body {
     padding-bottom: 50px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     html {
         padding-left: 15%;
         padding-right: 15%;
@@ -59,7 +59,7 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     html {
         padding-left: 5%;
         padding-right: 5%;

@@ -1,7 +1,7 @@
 .prices-subtitle {
     display: flex;
     flex-direction: column-reverse;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .prices-subtitle img {
@@ -14,19 +14,26 @@
     font-size: 8vw;
     position: absolute;
     margin-left: 20%;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1200px) {
     #pricesTitle {
         font-size: 9vw;
-        margin-bottom: 5%;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1024px) {
     #pricesTitle {
         font-size: 10vw;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    #pricesTitle {
+        font-size: 11vw;
+        margin-left: 27%;
         margin-bottom: 6%;
     }
 }
