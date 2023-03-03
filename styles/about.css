@@ -1,13 +1,21 @@
 .about-me {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 10%;
     font-size: 1.4vw;
     margin-bottom: 5%;
 }
 
+.introduction {
+    width: 100%;
+    margin-bottom: 10%;
+    text-align: justify;
+}
+
 .about-me-wrapper {
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,6 +52,10 @@
     .about-me {
         flex-direction: column;
         font-size: 3.5vw;
+    }
+
+    .introduction {
+        width: 90%;
     }
 
     .about-me-wrapper {
