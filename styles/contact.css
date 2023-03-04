@@ -103,6 +103,30 @@ form button {
     font-size: 1.5vw;
     background-color: #333;
     color: whitesmoke;
+    animation: button-anim-out 0.3s forwards;
+}
+
+@keyframes button-anim-out {
+    from {
+        opacity: 0.9;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+form button:hover {
+    cursor: pointer;
+    animation: button-anim-in 0.3s forwards;
+}
+
+@keyframes button-anim-in {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.9;
+    }
 }
 
 @media (max-width: 1200px) {
