@@ -80,6 +80,11 @@ input, form p {
     width: 85%;
 }
 
+label {
+    display: flex;
+    flex-direction: column;
+}
+
 input, textarea {
     align-self: center;
     font-size: 1.4vw;
