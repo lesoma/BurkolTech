@@ -8,10 +8,6 @@
     width: 40%;
 }
 
-/* .flex-item-left p {
-    font-size: 1.5vw;
-} */
-
 .flex-item-left span {
     font-size: 1.5vw;
 }
@@ -83,10 +79,6 @@
         font-size: 5vw;
     }
 
-    /* .flex-item-left p {
-        font-size: 5vw;
-    } */
-
     .flex-item-left span {
         font-size: 5vw;
     }
@@ -103,13 +95,8 @@
     .info-container {
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
         justify-content: space-between;
     }
-
-    /* .info-container div {
-        width: 45%;
-    } */
 
     .info img {
         width: 10%;
